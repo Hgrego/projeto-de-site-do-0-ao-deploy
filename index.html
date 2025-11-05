@@ -3,37 +3,305 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site</title>
+    <title>Meu Spotify</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo ao meu site</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fab fa-spotify"></i>
+                <span>Spotify</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li class="active">
+                        <a href="#"><i class="fas fa-home"></i> Início</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-search"></i> Buscar</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-book"></i> Sua Biblioteca</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
 
-    <main>
-        <section id="sobre">
-            <h2>Sobre</h2>
-            <p>Este é um site exemplo criado com HTML5.</p>
-        </section>
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
 
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Entre em contato conosco!</p>
-        </section>
-    </main>
+            <div class="content-grid">
+                <section class="playlist-section">
+                    <h2>Todas as Músicas</h2>
+                    <div id="lista-de-musicas" class="musica-grid">
+                        <!-- As músicas serão inseridas aqui via JavaScript -->
+                    </div>
+                </section>
 
-    <footer>
-        <p>&copy; 2025 - Todos os direitos reservados</p>
-    </footer>
+                <section class="playlist-section">
+                    <h2>Trending Agora</h2>
+                    <div class="musica-grid">
+                        <div class="musica-card">
+                            <div class="img-container">
+                                <img src="https://via.placeholder.com/300x300/1DB954/FFFFFF.png?text=%F0%9F%8E%B5+Top+50%0ABrasil" alt="Top 50 - Brasil">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Top 50 - Brasil</h3>
+                            <p>As mais tocadas do momento</p>
+                        </div>
+                        <div class="musica-card">
+                            <div class="img-container">
+                                <img src="https://via.placeholder.com/300x300/1DB954/FFFFFF.png?text=%F0%9F%8E%A8+Chico%0ABuarque" alt="Chico Buarque">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Chico Buarque</h3>
+                            <p>Melhores do Chico</p>
+                        </div>
+                        <div class="musica-card">
+                            <div class="img-container">
+                                <img src="https://via.placeholder.com/300x300/1DB954/FFFFFF.png?text=%F0%9F%8E%B8+Caetano%0AVeloso" alt="Caetano Veloso">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Caetano Veloso</h3>
+                            <p>Clássicos Eternos</p>
+                        </div>
+                        <div class="musica-card">
+                            <div class="img-container">
+                                <img src="https://via.placeholder.com/300x300/1DB954/FFFFFF.png?text=%F0%9F%8E%B5+Viral+Hits" alt="Viral Hits">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Viral Hits</h3>
+                            <p>Viralizou? Está aqui!</p>
+                        </div>
+                        <div class="musica-card">
+                            <div class="img-container">
+                                <img src="https://i.scdn.co/image/ab67706f000000025e5b3d9863c82acf463e7945" alt="Funk Hits">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Funk Hits</h3>
+                            <p>Os funks mais tocados</p>
+                        </div>
+                        <div class="musica-card">
+                            <div class="img-container">
+                                <img src="https://i.scdn.co/image/ab67706f000000029249b35f23fb596b6f006a15" alt="Sertanejo 2025">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Sertanejo 2025</h3>
+                            <p>O melhor do sertanejo</p>
+                        </div>
+                        <div class="musica-card">
+                            <div class="img-container">
+                                <img src="https://i.scdn.co/image/ab67706f00000002970e11d621708388a50f55b8" alt="Pop Mix">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Pop Mix</h3>
+                            <p>Hits pop nacionais e internacionais</p>
+                        </div>
+                        <div class="musica-card">
+                            <div class="img-container">
+                                <img src="https://i.scdn.co/image/ab67706f000000026e1034b448d43588e30be409" alt="Pagode das Antigas">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Pagode das Antigas</h3>
+                            <p>Clássicos do pagode</p>
+                        </div>
+                    </div>
+                </section>
 
-    <script src="./js/main.js"></script>
+                <section class="playlist-section">
+                    <h2>Feito para você</h2>
+                    <div class="musica-grid">
+                        <div class="musica-card">
+                            <div class="img-container">
+                                <img src="https://i.scdn.co/image/ab67706f000000028b37b39f902400c3b92169fa" alt="Daily Mix 1">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Daily Mix 1</h3>
+                            <p>Pop e Rock nacional</p>
+                        </div>
+                        <div class="musica-card">
+                            <div class="img-container">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273f06e08b613873f6e1533b589" alt="Maria Bethânia">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Maria Bethânia</h3>
+                            <p>A voz do Brasil</p>
+                        </div>
+                        <div class="musica-card">
+                            <div class="img-container">
+                                <img src="https://i.scdn.co/image/ab67616d0000b2738e35474f529927dd4ca37c04" alt="Jorge Ben Jor">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Jorge Ben Jor</h3>
+                            <p>Sucessos Inesquecíveis</p>
+                        </div>
+                        <div class="musica-card">
+                            <div class="img-container">
+                                <img src="https://i.scdn.co/image/ab67706f000000025f2635e031078672e7b384a5" alt="Daily Mix 2">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Daily Mix 2</h3>
+                            <p>Hip Hop e R&B</p>
+                        </div>
+                        <div class="musica-card">
+                            <div class="img-container">
+                                <img src="https://i.scdn.co/image/ab67706f0000000284c52681377c4f52aa227c19" alt="Daily Mix 3">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Daily Mix 3</h3>
+                            <p>MPB e Samba</p>
+                        </div>
+                        <div class="musica-card">
+                            <div class="img-container">
+                                <img src="https://i.scdn.co/image/ab67706f00000002c414e7daf34690c9f983f76e" alt="Radar de Novidades">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Radar de Novidades</h3>
+                            <p>Novos lançamentos para você</p>
+                        </div>
+                        <div class="musica-card">
+                            <div class="img-container">
+                                <img src="https://i.scdn.co/image/ab67706f00000002fe6d8d1019d5b302213e3730" alt="Cápsula do Tempo">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Cápsula do Tempo</h3>
+                            <p>Músicas que marcaram época</p>
+                        </div>
+                        <div class="musica-card">
+                            <div class="img-container">
+                                <img src="https://i.scdn.co/image/ab67706f000000027ea4d505c4f13224f268c116" alt="On Repeat">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>On Repeat</h3>
+                            <p>Suas músicas mais tocadas</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="playlist-section">
+                    <h2>Gêneros em Alta</h2>
+                    <div class="musica-grid">
+                        <div class="musica-card">
+                            <div class="img-container">
+                                <img src="https://i.scdn.co/image/ab67706c0000da84894f2a0c737222654eabb06a" alt="Hip Hop Brasil">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Hip Hop Brasil</h3>
+                            <p>O melhor do rap nacional</p>
+                        </div>
+                        <div class="musica-card">
+                            <div class="img-container">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273d9a129c4a656a55dfb62ac26" alt="Novos Baianos">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Novos Baianos</h3>
+                            <p>Acabou Chorare e mais</p>
+                        </div>
+                        <div class="musica-card">
+                            <div class="img-container">
+                                <img src="https://i.scdn.co/image/ab67616d0000b2735f81d71fd8b8053c1734c2f7" alt="Cartola">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Cartola</h3>
+                            <p>O poeta do samba</p>
+                        </div>
+                        <div class="musica-card">
+                            <div class="img-container">
+                                <img src="https://i.scdn.co/image/ab67706f000000025466e7ae55243cebe82e9609" alt="Rock Nacional">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Rock Nacional</h3>
+                            <p>Clássicos do rock brasileiro</p>
+                        </div>
+                        <div class="musica-card">
+                            <div class="img-container">
+                                <img src="https://i.scdn.co/image/ab67706f000000026019987df5656e2f01912fd8" alt="MPB Hoje">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>MPB Hoje</h3>
+                            <p>O novo som da MPB</p>
+                        </div>
+                        <div class="musica-card">
+                            <div class="img-container">
+                                <img src="https://i.scdn.co/image/ab67706f000000023c41700c91821c8599e6ee0d" alt="Eletrônica Brasil">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Eletrônica Brasil</h3>
+                            <p>As melhores tracks brasileiras</p>
+                        </div>
+                        <div class="musica-card">
+                            <div class="img-container">
+                                <img src="https://i.scdn.co/image/ab67706f000000029cc6891615f6f5937f59e5a2" alt="Forró e Piseiro">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Forró e Piseiro</h3>
+                            <p>O melhor do nordeste</p>
+                        </div>
+                        <div class="musica-card">
+                            <div class="img-container">
+                                <img src="https://i.scdn.co/image/ab67706f000000026019987df5656e2f01912fd8" alt="Indie Brasil">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Indie Brasil</h3>
+                            <p>A nova cena independente</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>
